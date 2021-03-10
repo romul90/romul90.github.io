@@ -148,6 +148,10 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/ui/EditorToolbar/linkify</li>
+
+<li>$:/core/ui/EditorToolbar/transcludify</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/GitHub/Filename</li>
@@ -160,6 +164,8 @@ Error message and password prompt
 
 <li>$:/isEncrypted</li>
 
+<li>$:/layout</li>
+
 <li>$:/palette</li>
 
 <li>$:/SiteSubtitle</li>
@@ -171,6 +177,10 @@ Error message and password prompt
 <li>$:/state/showeditpreview</li>
 
 <li>$:/state/tab--1963855381</li>
+
+<li>$:/state/tab--2112689675</li>
+
+<li>$:/state/tab--959111941</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -186,11 +196,17 @@ Error message and password prompt
 
 <li>$:/StoryList</li>
 
+<li>$:/tags/EditorToolbar</li>
+
 <li>$:/theme</li>
 
 <li>$:/themes/tiddlywiki/snowwhite</li>
 
 <li>$:/themes/tiddlywiki/vanilla</li>
+
+<li>$:/themes/tiddlywiki/vanilla/options/stickytitles</li>
+
+<li>$:/view</li>
 
 <li>Draft of 'Greetings!' by Ivan Romanov</li>
 
@@ -10087,6 +10103,24 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div caption="{{$:/language/Buttons/Linkify/Caption}}" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20210310193336859" creator="Ivan Romanov" description="{{$:/language/Buttons/Linkify/Hint}}" icon="$:/core/images/linkify" modified="20210310193336859" modifier="Ivan Romanov" shortcuts="((linkify))" tags="$:/tags/EditorToolbar" title="$:/core/ui/EditorToolbar/linkify">
+<pre>&lt;$action-sendmessage
+	$message=&quot;tm-edit-text-operation&quot;
+	$param=&quot;wrap-selection&quot;
+	prefix=&quot;[[&quot;
+	suffix=&quot;]]&quot;
+/&gt;
+</pre>
+</div>
+<div caption="{{$:/language/Buttons/Transcludify/Caption}}" condition="[&lt;targetTiddler&gt;!has[type]] [&lt;targetTiddler&gt;type[text/vnd.tiddlywiki]]" created="20210310193336859" creator="Ivan Romanov" description="{{$:/language/Buttons/Transcludify/Hint}}" icon="$:/core/images/transcludify" modified="20210310193336859" modifier="Ivan Romanov" shortcuts="((transcludify))" tags="$:/tags/EditorToolbar" title="$:/core/ui/EditorToolbar/transcludify">
+<pre>&lt;$action-sendmessage
+	$message=&quot;tm-edit-text-operation&quot;
+	$param=&quot;wrap-selection&quot;
+	prefix=&quot;{{&quot;
+	suffix=&quot;}}&quot;
+/&gt;
+</pre>
+</div>
 <div created="20210228191524573" creator="Ivan" modified="20210228191541036" modifier="Ivan" title="$:/DefaultTiddlers">
 <pre>Greetings!
 </pre>
@@ -10106,6 +10140,9 @@ Error message and password prompt
 <div title="$:/isEncrypted">
 <pre>no</pre>
 </div>
+<div created="20210310193403748" creator="Ivan Romanov" modified="20210310193408483" modifier="Ivan Romanov" title="$:/layout">
+<pre>$:/core/ui/PageTemplate</pre>
+</div>
 <div created="20210228191504748" creator="Ivan" modified="20210309200946668" modifier="Ivan Romanov" title="$:/palette">
 <pre>$:/palettes/Twilight</pre>
 </div>
@@ -10121,20 +10158,26 @@ Error message and password prompt
 <div created="20210309200527711" creator="Ivan Romanov" modified="20210309200751931" modifier="Ivan Romanov" title="$:/state/showeditpreview">
 <pre>no</pre>
 </div>
-<div created="20210228191450667" creator="Ivan" modified="20210309200922858" modifier="Ivan Romanov" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Palette</pre>
+<div created="20210228191450667" creator="Ivan" modified="20210310193414300" modifier="Ivan Romanov" title="$:/state/tab--1963855381">
+<pre>$:/themes/tiddlywiki/vanilla/themetweaks</pre>
 </div>
-<div created="20210227172032943" creator="Ivan" modified="20210309200916955" modifier="Ivan Romanov" title="$:/state/tab-1749438307">
+<div created="20210310193309083" creator="Ivan Romanov" modified="20210310193309083" modifier="Ivan Romanov" title="$:/state/tab--2112689675">
+<pre>$:/core/ui/ControlPanel/Advanced</pre>
+</div>
+<div created="20210310193314211" creator="Ivan Romanov" modified="20210310193314211" modifier="Ivan Romanov" title="$:/state/tab--959111941">
+<pre>$:/core/ui/ControlPanel/EditorTypes</pre>
+</div>
+<div created="20210227172032943" creator="Ivan" modified="20210310193316749" modifier="Ivan Romanov" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
 <div created="20210227172034598" modified="20210227172221713" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20210228191049299" creator="Ivan" modified="20210309200840565" modifier="Ivan Romanov" title="$:/state/tab/sidebar--595412856">
+<div created="20210228191049299" creator="Ivan" modified="20210310193234923" modifier="Ivan Romanov" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
-<div created="20210309195403462" creator="Ivan Romanov" modified="20210309195403462" modifier="Ivan Romanov" title="$:/state/tabs/controlpanel/toolbars-1345989671">
-<pre>$:/core/ui/ControlPanel/Toolbars/PageControls</pre>
+<div created="20210309195403462" creator="Ivan Romanov" modified="20210310193400235" modifier="Ivan Romanov" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
@@ -10142,7 +10185,10 @@ Error message and password prompt
 <div created="20210228191436164" creator="I" modified="20210309194944684" modifier="Ivan Romano" title="$:/status/UserName">
 <pre>Ivan Romanov</pre>
 </div>
-<div created="20210309200848157" creator="Ivan Romanov" list="$:/ControlPanel Greetings!" modified="20210309200848157" modifier="Ivan Romanov" title="$:/StoryList">
+<div created="20210310193236884" creator="Ivan Romanov" list="$:/ControlPanel Greetings!" modified="20210310193236884" modifier="Ivan Romanov" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20210310193336861" creator="Ivan Romanov" list="$:/core/ui/EditorToolbar/paint $:/core/ui/EditorToolbar/opacity $:/core/ui/EditorToolbar/line-width $:/core/ui/EditorToolbar/rotate-left $:/core/ui/EditorToolbar/clear $:/core/ui/EditorToolbar/bold $:/core/ui/EditorToolbar/italic $:/core/ui/EditorToolbar/strikethrough $:/core/ui/EditorToolbar/underline $:/core/ui/EditorToolbar/superscript $:/core/ui/EditorToolbar/subscript $:/core/ui/EditorToolbar/mono-line $:/core/ui/EditorToolbar/linkify $:/core/ui/EditorToolbar/transcludify $:/core/ui/EditorToolbar/mono-block $:/core/ui/EditorToolbar/quote $:/core/ui/EditorToolbar/list-bullet $:/core/ui/EditorToolbar/list-number $:/core/ui/EditorToolbar/heading-1 $:/core/ui/EditorToolbar/heading-2 $:/core/ui/EditorToolbar/heading-3 $:/core/ui/EditorToolbar/heading-4 $:/core/ui/EditorToolbar/heading-5 $:/core/ui/EditorToolbar/heading-6 $:/core/ui/EditorToolbar/link $:/core/ui/EditorToolbar/excise $:/core/ui/EditorToolbar/picture $:/core/ui/EditorToolbar/stamp $:/core/ui/EditorToolbar/size $:/core/ui/EditorToolbar/editor-height $:/core/ui/EditorToolbar/more $:/core/ui/EditorToolbar/preview $:/core/ui/EditorToolbar/preview-type" modified="20210310193336861" modifier="Ivan Romanov" title="$:/tags/EditorToolbar">
 <pre></pre>
 </div>
 <div created="20210228191453260" creator="Ivan" modified="20210228191454597" modifier="Ivan" title="$:/theme">
@@ -10256,6 +10302,12 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20210310193423424" creator="Ivan Romanov" modified="20210310193423424" modifier="Ivan Romanov" title="$:/themes/tiddlywiki/vanilla/options/stickytitles">
+<pre>yes</pre>
+</div>
+<div created="20210310193322718" creator="Ivan Romanov" modified="20210310193322718" modifier="Ivan Romanov" title="$:/view">
+<pre>pop</pre>
 </div>
 <div created="20210228190855335" creator="Ivan Romanov" draft.of="Greetings!" draft.title="Greetings!" modified="20210309200603034" modifier="Ivan Romanov" tags="GettingStarted common" title="Draft of 'Greetings!' by Ivan Romanov">
 <pre>My name is Ivan Romanov and welcome to my personal Tiddly_Wiki_Blog_Slash_Personal_Site. 
