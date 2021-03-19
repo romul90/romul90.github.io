@@ -1,0 +1,19 @@
+html {
+    padding-top: 10px;
+    background: linear-gradient(slategrey, black) no-repeat fixed;
+    margin-bottom: 300px;
+}
+
+body {
+    margin: auto;
+    color:beige;
+    background: rgba(0, 0, 0, .3);
+    padding:10px;
+    border-radius: 20px;
+}
+
+h1 {text-align: center;}
+
+@media {
+    body {max-width: 850px;}
+}
